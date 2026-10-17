@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "passed": 23,
+  "checks": [
+    "git add autocrlf=true preserves models/best_model.pkl",
+    "git add autocrlf=true preserves models/feature_defaults.json",
+    "git add autocrlf=true preserves data/train.csv",
+    "git add autocrlf=true preserves data/test.csv",
+    "git add autocrlf=true preserves results/model_results.csv",
+    "git add autocrlf=true preserves models/final/manifest.json",
+    "git add autocrlf=true preserves results/tuning_selection.json",
+    "checkout autocrlf=false models/best_model.pkl",
+    "checkout autocrlf=false models/feature_defaults.json",
+    "checkout autocrlf=false data/train.csv",
+    "checkout autocrlf=false data/test.csv",
+    "checkout autocrlf=false results/model_results.csv",
+    "checkout autocrlf=false models/final/manifest.json",
+    "checkout autocrlf=false results/tuning_selection.json",
+    "API engine starts after false checkout",
+    "checkout autocrlf=true models/best_model.pkl",
+    "checkout autocrlf=true models/feature_defaults.json",
+    "checkout autocrlf=true data/train.csv",
+    "checkout autocrlf=true data/test.csv",
+    "checkout autocrlf=true results/model_results.csv",
+    "checkout autocrlf=true models/final/manifest.json",
+    "checkout autocrlf=true results/tuning_selection.json",
+    "API engine starts after true checkout"
+  ],
+  "integrity_guard_disabled": false,
+  "data_or_weights_modified": false
+}

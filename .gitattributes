@@ -1,0 +1,12 @@
+# Source text may use normal Git line-ending handling.
+* text=auto
+# These artifacts have byte-exact SHA256 manifests: NEVER normalize their bytes.
+*.csv -text
+*.json -text
+*.pkl -text
+*.ubj -text
+*.npz -text
+*.zip -text
+*.png -text
+*.svg text eol=lf
+*.sh text eol=lf

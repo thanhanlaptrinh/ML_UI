@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-17T14:28:03.411230+00:00",
+  "generated_at": "2026-10-17T15:14:25.338140+00:00",
   "rate": 25000.0,
   "currency": "VND",
   "operation": "predict_only_saved_weights",

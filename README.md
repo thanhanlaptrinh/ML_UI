@@ -1,3 +1,5 @@
+> **Render/Git fix:** nếu gặp lỗi SHA256 data/train.csv sau khi push, xem `docs/RENDER_GIT_FIX.md`. Phải chép đầy đủ gói để khôi phục byte gốc, commit .gitattributes và renormalize; không tắt kiểm tra hash.
+
 > **Bản sửa lỗi nạp XGBoost trên Windows:** Flask nạp XGBoost qua `models/final/xgboost.ubj` (official save_model/load_model) và `xgboost_preprocess.pkl`, tránh khôi phục Booster từ pickle Linux. Giữ nguyên các PKL và trọng số cũ; không huấn luyện lại. Phải chép đủ cả gói, gồm manifest và audit đã cập nhật. Xem `docs/WINDOWS_FIX.md`.
 
 # HomeValue Lab · nhóm 9 · bản sửa lượt 1
