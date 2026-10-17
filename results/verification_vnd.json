@@ -1,0 +1,229 @@
+{
+  "status": "PASS",
+  "passed": 55,
+  "failed": 0,
+  "rate": 25000.0,
+  "checks": [
+    {
+      "check": "Protected SHA-256 models/best_model.pkl",
+      "passed": true
+    },
+    {
+      "check": "Protected SHA-256 models/feature_defaults.json",
+      "passed": true
+    },
+    {
+      "check": "Protected SHA-256 data/train.csv",
+      "passed": true
+    },
+    {
+      "check": "Protected SHA-256 data/test.csv",
+      "passed": true
+    },
+    {
+      "check": "Protected SHA-256 results/model_results.csv",
+      "passed": true
+    },
+    {
+      "check": "Protected SHA-256 models/final/manifest.json",
+      "passed": true
+    },
+    {
+      "check": "Protected SHA-256 results/tuning_selection.json",
+      "passed": true
+    },
+    {
+      "check": "Demo IDs absent from reconstructed training split",
+      "passed": true
+    },
+    {
+      "check": "Exactly 30 distinct source IDs",
+      "passed": true
+    },
+    {
+      "check": "linear: original CSV SalePrice matches all 30 labels",
+      "passed": true
+    },
+    {
+      "check": "linear: mae independent recomputation",
+      "passed": true
+    },
+    {
+      "check": "linear: mse independent recomputation",
+      "passed": true
+    },
+    {
+      "check": "linear: rmse independent recomputation",
+      "passed": true
+    },
+    {
+      "check": "linear: r2 independent recomputation",
+      "passed": true
+    },
+    {
+      "check": "linear: VND scaling preserves R2",
+      "passed": true
+    },
+    {
+      "check": "linear: 292-row holdout MAE matches generated final CSV",
+      "passed": true
+    },
+    {
+      "check": "linear: model decomposition ID=775",
+      "passed": true
+    },
+    {
+      "check": "linear: model decomposition ID=818",
+      "passed": true
+    },
+    {
+      "check": "tree: original CSV SalePrice matches all 30 labels",
+      "passed": true
+    },
+    {
+      "check": "tree: mae independent recomputation",
+      "passed": true
+    },
+    {
+      "check": "tree: mse independent recomputation",
+      "passed": true
+    },
+    {
+      "check": "tree: rmse independent recomputation",
+      "passed": true
+    },
+    {
+      "check": "tree: r2 independent recomputation",
+      "passed": true
+    },
+    {
+      "check": "tree: VND scaling preserves R2",
+      "passed": true
+    },
+    {
+      "check": "tree: 292-row holdout MAE matches generated final CSV",
+      "passed": true
+    },
+    {
+      "check": "tree: model decomposition ID=775",
+      "passed": true
+    },
+    {
+      "check": "tree: model decomposition ID=818",
+      "passed": true
+    },
+    {
+      "check": "forest: original CSV SalePrice matches all 30 labels",
+      "passed": true
+    },
+    {
+      "check": "forest: mae independent recomputation",
+      "passed": true
+    },
+    {
+      "check": "forest: mse independent recomputation",
+      "passed": true
+    },
+    {
+      "check": "forest: rmse independent recomputation",
+      "passed": true
+    },
+    {
+      "check": "forest: r2 independent recomputation",
+      "passed": true
+    },
+    {
+      "check": "forest: VND scaling preserves R2",
+      "passed": true
+    },
+    {
+      "check": "forest: 292-row holdout MAE matches generated final CSV",
+      "passed": true
+    },
+    {
+      "check": "forest: model decomposition ID=775",
+      "passed": true
+    },
+    {
+      "check": "forest: model decomposition ID=818",
+      "passed": true
+    },
+    {
+      "check": "boosting: original CSV SalePrice matches all 30 labels",
+      "passed": true
+    },
+    {
+      "check": "boosting: mae independent recomputation",
+      "passed": true
+    },
+    {
+      "check": "boosting: mse independent recomputation",
+      "passed": true
+    },
+    {
+      "check": "boosting: rmse independent recomputation",
+      "passed": true
+    },
+    {
+      "check": "boosting: r2 independent recomputation",
+      "passed": true
+    },
+    {
+      "check": "boosting: VND scaling preserves R2",
+      "passed": true
+    },
+    {
+      "check": "boosting: 292-row holdout MAE matches generated final CSV",
+      "passed": true
+    },
+    {
+      "check": "boosting: model decomposition ID=775",
+      "passed": true
+    },
+    {
+      "check": "boosting: model decomposition ID=818",
+      "passed": true
+    },
+    {
+      "check": "xgboost: original CSV SalePrice matches all 30 labels",
+      "passed": true
+    },
+    {
+      "check": "xgboost: mae independent recomputation",
+      "passed": true
+    },
+    {
+      "check": "xgboost: mse independent recomputation",
+      "passed": true
+    },
+    {
+      "check": "xgboost: rmse independent recomputation",
+      "passed": true
+    },
+    {
+      "check": "xgboost: r2 independent recomputation",
+      "passed": true
+    },
+    {
+      "check": "xgboost: VND scaling preserves R2",
+      "passed": true
+    },
+    {
+      "check": "xgboost: 292-row holdout MAE matches generated final CSV",
+      "passed": true
+    },
+    {
+      "check": "xgboost: model decomposition ID=775",
+      "passed": true
+    },
+    {
+      "check": "xgboost: model decomposition ID=818",
+      "passed": true
+    },
+    {
+      "check": "Edited hypothetical home has no claimed ground truth",
+      "passed": true
+    }
+  ],
+  "scope": "Arithmetic and artifact integrity verified; this does not assert exact market prices or external transaction verification."
+}

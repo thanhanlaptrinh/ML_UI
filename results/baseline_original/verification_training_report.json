@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "passed": 31,
+  "checks": [
+    "All 5 agree with original rounded CSV metrics",
+    "292 holdout disjoint from 1168 train",
+    "MAE rule selects XGBoost",
+    "Historical CV winner is Gradient Boosting",
+    "linear MAE/RMSE/R2 independently recomputed",
+    "linear cross-tab predictions identical",
+    "linear coverage recomputed from actual prices",
+    "linear worst cases are true global worst",
+    "linear 292 actual prices match CSV",
+    "tree MAE/RMSE/R2 independently recomputed",
+    "tree cross-tab predictions identical",
+    "tree coverage recomputed from actual prices",
+    "tree worst cases are true global worst",
+    "tree 292 actual prices match CSV",
+    "forest MAE/RMSE/R2 independently recomputed",
+    "forest cross-tab predictions identical",
+    "forest coverage recomputed from actual prices",
+    "forest worst cases are true global worst",
+    "forest 292 actual prices match CSV",
+    "boosting MAE/RMSE/R2 independently recomputed",
+    "boosting cross-tab predictions identical",
+    "boosting coverage recomputed from actual prices",
+    "boosting worst cases are true global worst",
+    "boosting 292 actual prices match CSV",
+    "xgboost MAE/RMSE/R2 independently recomputed",
+    "xgboost cross-tab predictions identical",
+    "xgboost coverage recomputed from actual prices",
+    "xgboost worst cases are true global worst",
+    "xgboost 292 actual prices match CSV",
+    "All 8 protected files unchanged",
+    "Online source evidence all 6 equivalent"
+  ],
+  "protected_files": {
+    "models/vnd_supplement/linear.pkl": "07f8d0b33732236d7e5ccec95867bc44ccd2340cf4715b586848e950956ad6c2",
+    "models/vnd_supplement/tree.pkl": "578b2ecfdf2e4732ae6567bc3613bdbde0c6d65bf57a2041755880e2f514d0a6",
+    "models/vnd_supplement/forest.pkl": "b05f66c4e966717de353e21977d245630993e2567af445cb291fea7c68833f12",
+    "models/vnd_supplement/boosting.pkl": "bc7740375608fdaab59517985841547ef344fc0ac681caa26ed0405a850d9675",
+    "models/best_model.pkl": "239dc31cba8bcd9ea0a2da4f38d1ea20e817f1c6517dd1ea3c5937cfa44e7866",
+    "data/train.csv": "ed142e0a97bd49fc3b46c930209c55750fc4e806f5430c7d7409cb4cf25149cb",
+    "data/test.csv": "3559f4ee4f04729814c85f9f597331e02bdb81b7c96c1aacf8515610b69915cd",
+    "models/feature_defaults.json": "70430fc4209516715fef1701befdf593b5e81733697f5f17a2c5326bb0a80b96"
+  },
+  "browser_integration": {
+    "status": "PASS",
+    "checks": [
+      "Live report API through Express/Flask",
+      "Ranking and online source evidence",
+      "Full holdout pagination and worst cases",
+      "JSON download 5 models and CSV 1460 prediction rows",
+      "Source row to same-model predictor",
+      "292 holdout rows to all5 comparison",
+      "Best model navigation",
+      "390px mobile no horizontal page overflow",
+      "No browser page errors",
+      "All prior dynamic UI scenarios passed"
+    ]
+  }
+}

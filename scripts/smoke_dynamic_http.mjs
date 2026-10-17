@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+const base=process.env.BASE_URL||'http://127.0.0.1:3000/api';
+const get=async path=>{const r=await fetch(base+path);assert.equal(r.status,200);return r.json();};
+const evaluate=async body=>{const r=await fetch(base+'/evaluate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});assert.equal(r.status,200);return r.json();};
+const known=await get('/record/1000');assert.equal(known.source_id,1000);
+const noTruth=await evaluate({records:[{features:{GrLivArea:2000,OverallQual:8}}],models:['linear','tree','forest','boosting','xgboost']});assert.equal(noTruth.labeled_count,0);assert.equal(noTruth.best_by_mae,null);assert.ok(noTruth.models.every(m=>m.metrics===null));
+const kaggle=await get('/dataset/kaggle-test');assert.equal(kaggle.records.length,1459);
+const full=await evaluate({records:kaggle.records,models:['linear','tree','forest','boosting','xgboost'],target_currency:'USD'});assert.equal(full.count,1459);assert.equal(full.labeled_count,0);assert.ok(full.models.every(m=>m.predictions.length===1459));
+const live=await evaluate({records:[{features:{GrLivArea:2000,OverallQual:8},actual_vnd:6e9}],models:['xgboost'],explain:true});assert.equal(live.rows[0].truth,'user_supplied');assert.equal(live.models[0].metrics.r2,null);assert.ok(live.models[0].trace.verified);
+const invalid=await fetch(base+'/evaluate',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({records:[{features:{GrLivArea:2000},actual_vnd:-1}]})});assert.equal(invalid.status,400);
+console.log('PASS dynamic HTTP: arbitrary inputs, actual lookup beyond 30, complete 1459-row Kaggle test × 5, missing-label guards and true model explanations.');

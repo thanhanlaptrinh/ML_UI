@@ -1,0 +1,11 @@
+{
+  "usd_to_vnd": 25000,
+  "rate_note": "Tỷ giá quy đổi cố định phục vụ đồ án, không phải tỷ giá trực tiếp. Có thể cấu hình USD_TO_VND khi chạy Flask.",
+  "source_currency": "USD",
+  "display_currency": "VND",
+  "excluded_features": [
+    "Id"
+  ],
+  "input_feature_count": 79,
+  "model_manifest": "models/final/manifest.json"
+}

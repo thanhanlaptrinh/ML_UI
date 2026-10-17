@@ -1,0 +1,340 @@
+{
+  "status": "PASS",
+  "passed": 83,
+  "failed": 0,
+  "checks": [
+    {
+      "check": "Lookup beyond fixed demo allowed",
+      "passed": true
+    },
+    {
+      "check": "Known full row verifies original label",
+      "passed": true
+    },
+    {
+      "check": "linear direct pipeline matches dynamic result",
+      "passed": true
+    },
+    {
+      "check": "linear actual decomposition",
+      "passed": true
+    },
+    {
+      "check": "linear stage final matches predict",
+      "passed": true
+    },
+    {
+      "check": "linear one-row R2 missing rather than invented",
+      "passed": true
+    },
+    {
+      "check": "tree direct pipeline matches dynamic result",
+      "passed": true
+    },
+    {
+      "check": "tree actual decomposition",
+      "passed": true
+    },
+    {
+      "check": "tree stage final matches predict",
+      "passed": true
+    },
+    {
+      "check": "tree one-row R2 missing rather than invented",
+      "passed": true
+    },
+    {
+      "check": "forest direct pipeline matches dynamic result",
+      "passed": true
+    },
+    {
+      "check": "forest actual decomposition",
+      "passed": true
+    },
+    {
+      "check": "forest stage final matches predict",
+      "passed": true
+    },
+    {
+      "check": "forest one-row R2 missing rather than invented",
+      "passed": true
+    },
+    {
+      "check": "boosting direct pipeline matches dynamic result",
+      "passed": true
+    },
+    {
+      "check": "boosting actual decomposition",
+      "passed": true
+    },
+    {
+      "check": "boosting stage final matches predict",
+      "passed": true
+    },
+    {
+      "check": "boosting one-row R2 missing rather than invented",
+      "passed": true
+    },
+    {
+      "check": "xgboost direct pipeline matches dynamic result",
+      "passed": true
+    },
+    {
+      "check": "xgboost actual decomposition",
+      "passed": true
+    },
+    {
+      "check": "xgboost stage final matches predict",
+      "passed": true
+    },
+    {
+      "check": "xgboost one-row R2 missing rather than invented",
+      "passed": true
+    },
+    {
+      "check": "Unknown house no fabricated actual price",
+      "passed": true
+    },
+    {
+      "check": "Unlabeled predictions have no fake metrics or winner",
+      "passed": true
+    },
+    {
+      "check": "Default feature filling disclosed",
+      "passed": true
+    },
+    {
+      "check": "Changed source features lose original actual",
+      "passed": true
+    },
+    {
+      "check": "Manual label provenance is not verified",
+      "passed": true
+    },
+    {
+      "check": "linear current MSE is actual squared residual",
+      "passed": true
+    },
+    {
+      "check": "linear same-label baseline MSE correct",
+      "passed": true
+    },
+    {
+      "check": "linear stage MSE from actual label",
+      "passed": true
+    },
+    {
+      "check": "tree current MSE is actual squared residual",
+      "passed": true
+    },
+    {
+      "check": "tree same-label baseline MSE correct",
+      "passed": true
+    },
+    {
+      "check": "tree stage MSE from actual label",
+      "passed": true
+    },
+    {
+      "check": "forest current MSE is actual squared residual",
+      "passed": true
+    },
+    {
+      "check": "forest same-label baseline MSE correct",
+      "passed": true
+    },
+    {
+      "check": "forest stage MSE from actual label",
+      "passed": true
+    },
+    {
+      "check": "boosting current MSE is actual squared residual",
+      "passed": true
+    },
+    {
+      "check": "boosting same-label baseline MSE correct",
+      "passed": true
+    },
+    {
+      "check": "boosting stage MSE from actual label",
+      "passed": true
+    },
+    {
+      "check": "xgboost current MSE is actual squared residual",
+      "passed": true
+    },
+    {
+      "check": "xgboost same-label baseline MSE correct",
+      "passed": true
+    },
+    {
+      "check": "xgboost stage MSE from actual label",
+      "passed": true
+    },
+    {
+      "check": "New labeled CSV has 12 rows outside old 30",
+      "passed": true
+    },
+    {
+      "check": "All original labels of new CSV verified",
+      "passed": true
+    },
+    {
+      "check": "linear new dataset MAE sklearn",
+      "passed": true
+    },
+    {
+      "check": "linear new dataset MSE sklearn",
+      "passed": true
+    },
+    {
+      "check": "linear new dataset R2 sklearn",
+      "passed": true
+    },
+    {
+      "check": "linear new metrics not reused from demo30",
+      "passed": true
+    },
+    {
+      "check": "tree new dataset MAE sklearn",
+      "passed": true
+    },
+    {
+      "check": "tree new dataset MSE sklearn",
+      "passed": true
+    },
+    {
+      "check": "tree new dataset R2 sklearn",
+      "passed": true
+    },
+    {
+      "check": "tree new metrics not reused from demo30",
+      "passed": true
+    },
+    {
+      "check": "forest new dataset MAE sklearn",
+      "passed": true
+    },
+    {
+      "check": "forest new dataset MSE sklearn",
+      "passed": true
+    },
+    {
+      "check": "forest new dataset R2 sklearn",
+      "passed": true
+    },
+    {
+      "check": "forest new metrics not reused from demo30",
+      "passed": true
+    },
+    {
+      "check": "boosting new dataset MAE sklearn",
+      "passed": true
+    },
+    {
+      "check": "boosting new dataset MSE sklearn",
+      "passed": true
+    },
+    {
+      "check": "boosting new dataset R2 sklearn",
+      "passed": true
+    },
+    {
+      "check": "boosting new metrics not reused from demo30",
+      "passed": true
+    },
+    {
+      "check": "xgboost new dataset MAE sklearn",
+      "passed": true
+    },
+    {
+      "check": "xgboost new dataset MSE sklearn",
+      "passed": true
+    },
+    {
+      "check": "xgboost new dataset R2 sklearn",
+      "passed": true
+    },
+    {
+      "check": "xgboost new metrics not reused from demo30",
+      "passed": true
+    },
+    {
+      "check": "Mixed labels use only labeled rows",
+      "passed": true
+    },
+    {
+      "check": "Constant labels do not fabricate R2",
+      "passed": true
+    },
+    {
+      "check": "SalePrice USD converts once",
+      "passed": true
+    },
+    {
+      "check": "Explicit actual_vnd never double converted",
+      "passed": true
+    },
+    {
+      "check": "All 1459 Kaggle test inputs accessible",
+      "passed": true
+    },
+    {
+      "check": "Kaggle test never receives original train labels",
+      "passed": true
+    },
+    {
+      "check": "Reject missing records",
+      "passed": true
+    },
+    {
+      "check": "Reject submission-only Id/price",
+      "passed": true
+    },
+    {
+      "check": "Reject overflow label",
+      "passed": true
+    },
+    {
+      "check": "Reject negative label",
+      "passed": true
+    },
+    {
+      "check": "Reject unknown field",
+      "passed": true
+    },
+    {
+      "check": "Reject invalid numeric",
+      "passed": true
+    },
+    {
+      "check": "Reject invalid label units",
+      "passed": true
+    },
+    {
+      "check": "Preserved models/best_model.pkl",
+      "passed": true
+    },
+    {
+      "check": "Preserved models/feature_defaults.json",
+      "passed": true
+    },
+    {
+      "check": "Preserved data/train.csv",
+      "passed": true
+    },
+    {
+      "check": "Preserved data/test.csv",
+      "passed": true
+    },
+    {
+      "check": "Preserved results/model_results.csv",
+      "passed": true
+    },
+    {
+      "check": "JSON contains no NaN/Infinity",
+      "passed": true
+    }
+  ],
+  "scope": "Dynamic actual labels, new records, model decomposition, metrics and protected artifacts; not external market price verification."
+}

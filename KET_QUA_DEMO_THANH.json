@@ -1,0 +1,81 @@
+{
+  "scope": "Thành: chạy demo bằng model sẵn có; không huấn luyện lại",
+  "checks": [
+    {
+      "name": "Python health",
+      "status": 200,
+      "response": {
+        "status": "ok"
+      }
+    },
+    {
+      "name": "Express serves HTML",
+      "status": 200,
+      "pass": true
+    },
+    {
+      "name": "six_form_fields",
+      "status": 200,
+      "request": {
+        "LotArea": 8500,
+        "GrLivArea": 1500,
+        "OverallQual": 6,
+        "YearBuilt": 2005,
+        "Neighborhood": "CollgCr",
+        "GarageType": "Attchd"
+      },
+      "response": {
+        "predicted_price": 173391.52,
+        "used_input": {
+          "GarageType": "Attchd",
+          "GrLivArea": 1500,
+          "LotArea": 8500,
+          "Neighborhood": "CollgCr",
+          "OverallQual": 6,
+          "YearBuilt": 2005
+        }
+      }
+    },
+    {
+      "name": "empty_defaults",
+      "status": 200,
+      "request": {},
+      "response": {
+        "predicted_price": 162012.14,
+        "used_input": {}
+      }
+    },
+    {
+      "name": "invalid_number",
+      "status": 400,
+      "request": {
+        "LotArea": "abc"
+      },
+      "response": {
+        "error": "LotArea phải là số."
+      }
+    },
+    {
+      "name": "UI script submits to live API and displays result (jsdom)",
+      "pass": true,
+      "text": "Giá nhà dự đoán: $173,391.52 USD",
+      "computed_display": "block"
+    },
+    {
+      "name": "API matches direct saved-model prediction",
+      "pass": true,
+      "price_USD": 173391.52
+    }
+  ],
+  "ui_check_method": "jsdom chạy script thật với API HTTP thật, kiểm tra CSS display; chưa kiểm tra trực quan trong trình duyệt đồ họa",
+  "versions": {
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "Flask": "3.1.3",
+    "pandas": "2.2.3",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "joblib": "1.5.3"
+  },
+  "model_sha256": "239dc31cba8bcd9ea0a2da4f38d1ea20e817f1c6517dd1ea3c5937cfa44e7866"
+}

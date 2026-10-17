@@ -1,0 +1,5 @@
+{
+  "file": "models/best_model.pkl",
+  "model": "boosting",
+  "sha256": "afcf1dc5dd4d66eb20446a6ec435f64430482f63251858812ec3043c3afd54e5"
+}

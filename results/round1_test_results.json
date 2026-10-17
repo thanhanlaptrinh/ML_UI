@@ -1,0 +1,71 @@
+{
+  "status": "PASS",
+  "results": [
+    {
+      "command": [
+        "python",
+        "scripts/verify_vnd.py"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "stdout": "PASS 55 checks\nLinear Regression Chưa thấy dấu hiệu rõ theo ngưỡng đã đặt\nDecision Tree Có dấu hiệu overfit\nRandom Forest Có dấu hiệu overfit\nGradient Boosting Có dấu hiệu overfit\nXGBoost Chưa thấy dấu hiệu rõ theo ngưỡng đã đặt\n",
+      "stderr": "",
+      "seconds": 2.934353858999998
+    },
+    {
+      "command": [
+        "python",
+        "scripts/verify_dynamic.py"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "stdout": "PASS 85 dynamic numerical checks\n",
+      "stderr": "",
+      "seconds": 3.439414709999994
+    },
+    {
+      "command": [
+        "python",
+        "scripts/verify_training_report.py"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "stdout": "PASS 53 training report checks\n",
+      "stderr": "",
+      "seconds": 2.9721465239999816
+    },
+    {
+      "command": [
+        "python",
+        "scripts/verify_round1.py"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "stdout": "PASS 94 round1 checks\n",
+      "stderr": "",
+      "seconds": 4.891244563999976
+    },
+    {
+      "command": [
+        "node",
+        "scripts/smoke_http.mjs"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "stdout": "PASS HTTP: five real pipelines, prices/metrics, decomposition, CSV 150 rows and invalid model.\n",
+      "stderr": "",
+      "seconds": 0.5411896079999678
+    },
+    {
+      "command": [
+        "node",
+        "scripts/smoke_dynamic_http.mjs"
+      ],
+      "exit_code": 0,
+      "status": "PASS",
+      "stdout": "PASS dynamic HTTP: arbitrary inputs, actual lookup beyond 30, complete 1459-row Kaggle test × 5, missing-label guards and true model explanations.\n",
+      "stderr": "",
+      "seconds": 1.6578096159999518
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+START Linear Regression
+DONE linear old CV 19894.989308934 no-ID control 20026.418205414775 selected CV 20026.418205414775 variant raw
+START Decision Tree
+SEARCH tree raw
+DONE tree old CV 24641.684904002097 no-ID control 25102.582480062843 selected CV 24404.830911643858 variant raw
+START Random Forest
+SEARCH forest raw
+SEARCH forest log1p
+DONE forest old CV 18276.919301804777 no-ID control 18265.393037306043 selected CV 17337.203954225264 variant log1p
+START Gradient Boosting
+SEARCH boosting raw
+SEARCH boosting log1p
+DONE boosting old CV 16235.178115659432 no-ID control 16096.958370920169 selected CV 15043.516959840515 variant raw
+START XGBoost
+SEARCH xgboost raw
+SEARCH xgboost log1p
+DONE xgboost old CV 16329.826171875 no-ID control 16175.3640625 selected CV 15393.440234375 variant raw
+FROZEN CV WINNER: boosting selection SHA256 a934e9f11afa74e046b22eca9d9c7f2bc4cf03013d6724bfc13e86c73c8a4f17

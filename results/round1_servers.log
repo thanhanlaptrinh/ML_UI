@@ -1,0 +1,26 @@
+HomeValue Lab VND: http://localhost:3000
+ * Serving Flask app 'predict_service'
+ * Debug mode: off
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+[33mPress CTRL+C to quit[0m
+127.0.0.1 - - [17/Oct/2026 07:27:54] "GET /health HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 07:28:09] "GET /audit HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 07:28:09] "POST /predict HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 07:28:09] "GET /calculations/linear HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 07:28:09] "POST /predict HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 07:28:09] "GET /calculations/tree HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 07:28:09] "POST /predict HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 07:28:09] "GET /calculations/forest HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 07:28:09] "POST /predict HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 07:28:09] "GET /calculations/boosting HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 07:28:09] "POST /predict HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 07:28:09] "GET /calculations/xgboost HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 07:28:09] "GET /export.csv HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 07:28:09] "[31m[1mPOST /predict HTTP/1.1[0m" 400 -
+127.0.0.1 - - [17/Oct/2026 07:28:09] "GET /record/1000 HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 07:28:09] "POST /evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 07:28:10] "GET /dataset/kaggle-test HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 07:28:10] "POST /evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 07:28:11] "POST /evaluate HTTP/1.1" 200 -
+127.0.0.1 - - [17/Oct/2026 07:28:11] "[31m[1mPOST /evaluate HTTP/1.1[0m" 400 -

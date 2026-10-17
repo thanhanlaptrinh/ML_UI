@@ -1,0 +1,49 @@
+{
+  "repository": "https://github.com/tranvonghoclaptrinh/house-price-ml",
+  "commit": "00e2ee36d4f9a8b2d18320644c0b2029860bdfb5",
+  "checked_at_utc": "2026-10-15",
+  "files": [
+    {
+      "path": "notebooks_or_src_py/train_compare.py",
+      "sha256": "8e679c3ce9bc2392d0b6c1a0baa53ed31a8d9f50343d5d553d2f7cc699e0626f",
+      "matches_local": false,
+      "equivalent_content": true,
+      "comparison": "UTF8 text normalized CRLF/LF"
+    },
+    {
+      "path": "notebooks_or_src_py/preprocess.py",
+      "sha256": "6d9e738f8ebdae2043a32e06cbcb917cbd1bf0bd868631c431439ae56d6e1a47",
+      "matches_local": false,
+      "equivalent_content": true,
+      "comparison": "UTF8 text normalized CRLF/LF"
+    },
+    {
+      "path": "results/model_results.csv",
+      "sha256": "ffea8e05d4eedff4db1088caa1edf0582f152c145470c15dcfccd7239c607d53",
+      "matches_local": false,
+      "equivalent_content": true,
+      "comparison": "CSV values/types identical"
+    },
+    {
+      "path": "models/best_model.pkl",
+      "sha256": "239dc31cba8bcd9ea0a2da4f38d1ea20e817f1c6517dd1ea3c5937cfa44e7866",
+      "matches_local": true,
+      "equivalent_content": true,
+      "comparison": "Exact bytes"
+    },
+    {
+      "path": "data/train.csv",
+      "sha256": "1e18addf81e5e4d347cc17ee6075bbe4a42b7fa26b9e5b063e8f692a5f929d41",
+      "matches_local": false,
+      "equivalent_content": true,
+      "comparison": "CSV values/types identical"
+    },
+    {
+      "path": "data/test.csv",
+      "sha256": "8fdd3d829d4d986b58f845c9553b225e67dd8383624d90fb6ca1d4bed5798c1e",
+      "matches_local": false,
+      "equivalent_content": true,
+      "comparison": "CSV values/types identical"
+    }
+  ]
+}
